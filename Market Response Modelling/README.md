@@ -62,7 +62,7 @@ The performance of the linear regression model will be evaluated in 3 ways:
 
 ### Model Assumptions
 
-<img src="mrmdiagnostic" width="500" style="display:block; margin: 0 auto;"/>
+<img src="mrmdiagnostic.png" width="500" style="display:block; margin: 0 auto;"/>
 
 - **Linearity of the data**: A linear relationship between the predictors and outcome variables can be assumed, as the Residuals vs. Fitted plot shows no discernible pattern, and the red line is approximately horizontal at zero.
 - **Homoscedasticity**: Residuals can be assumed to have constant variance, as the residuals in the Scale-Location plot are spread relatively evenly across the range of predictors.

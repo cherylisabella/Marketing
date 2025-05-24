@@ -37,7 +37,9 @@ To understand the characteristics of each segment, several demographic variables
 While there were no strong differences in gender or age, there was a significant difference in household size (`HHSize`) and device preferences between the clusters, which could provide useful insights for targeted marketing.
 
 ## Visualising the Results
-<img src="snakechart.jpg" width="500" style="display:block; margin: 0 auto;"/>
+<div align="center">
+  <img src="snakechart.jpg" width="500"/>
+</div>
 A snake chart was used to visually profile both clusters. This chart helped identify key areas of difference between the two groups based on standardized variables such as:
 
 - Streaming usage: Cluster 1 spends significantly more time streaming videos compared to Cluster 2.

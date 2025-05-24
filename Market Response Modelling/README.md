@@ -14,12 +14,16 @@ This project analyzes the effectiveness of the current marketing channels in acq
 
 The variables and their descriptions are shown below:
 
+<div align="center">
 <img src="mrmvariables.png" width="500" style="display:block; margin: 0 auto;"/>
+</div>
 
 ## Categorisation
 The first step is to categorise all variables in the form of a market response framework. 
 
+<div align="center">
 <img src="mrmframework.png" width="500" style="display:block; margin: 0 auto;"/>
+</div>
 
 ## Linear Regression Analysis
 The data was cleaned prior to being uploaded into R. Therefore, we can proceed with a linear regression analysis on the dataset.
@@ -62,7 +66,9 @@ The performance of the linear regression model will be evaluated in 3 ways:
 
 ### Model Assumptions
 
+<div align="center">
 <img src="mrmdiagnostic.png" width="500" style="display:block; margin: 0 auto;"/>
+</div>
 
 - **Linearity of the data**: A linear relationship between the predictors and outcome variables can be assumed, as the Residuals vs. Fitted plot shows no discernible pattern, and the red line is approximately horizontal at zero.
 - **Homoscedasticity**: Residuals can be assumed to have constant variance, as the residuals in the Scale-Location plot are spread relatively evenly across the range of predictors.
@@ -72,7 +78,7 @@ The performance of the linear regression model will be evaluated in 3 ways:
 
 ### Model Fit
 
-- The adjusted R-squared is only 0.3857, meaning that approximately 38.6% of the variance in the dependent variable is explained by the model. ⇒ This suggests that the model is not a good fit.
+- The adjusted R-squared is only 0.3857, meaning that approximately 38.6% of the variance in the dependent variable is explained by the model. This suggests that the model is not a good fit.
 - The p-value associated with the F-statistic is less than 0.05, indicating that at least one independent variable is significantly related to acquisition.
 - The F-statistic of 10.18 is relatively small, considering the size of the dataset.
 - The model has an RMSE of 0.314, which is relatively good, as there is little variation in the spread of the data.
@@ -80,6 +86,7 @@ The performance of the linear regression model will be evaluated in 3 ways:
 Before evaluating the significance of the coefficients, a two-fold cross-validation was performed, and the dataset was split into a training subgroup with 88 observations and a test set with 30 observations.
 
 ### Significance of coefficients (via T-tests)
+
 | **T-test Results**                  |               |                |             |             |                  |
 |--------------------------------------|---------------|----------------|-------------|-------------|------------------|
 | **Variable**                         | **t-value**   | **df**         | **p-value** | **Confidence Interval**            | **Mean (Training)** | **Mean (Testing)** |
